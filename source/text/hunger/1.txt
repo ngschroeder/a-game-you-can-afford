@@ -1,0 +1,7 @@
+[center][color=#FFFF00]
+Your stomach growls audibly.
+[/color][center]
+------------------------------------------------
+Damn, I should eat something.
+
+------------------------------------------------

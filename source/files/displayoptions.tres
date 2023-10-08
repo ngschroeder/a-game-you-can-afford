@@ -1,0 +1,14 @@
+{
+	"0": [
+		{"newWidth": "1280"},
+		{"newHeight": "720"},
+		{"newScale": "1.0"},
+		{"newFullscreen": "false"}
+	],
+	"1": [
+		{"newWidth": "1280"},
+		{"newHeight": "720"},
+		{"newScale": "1"},
+		{"newFullscreen": "true"}
+	]
+}

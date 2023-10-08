@@ -1,0 +1,292 @@
+[gd_scene load_steps=14 format=3 uid="uid://gp1mg5hoqwjy"]
+
+[ext_resource type="Texture2D" uid="uid://d4jskmrgigeoe" path="res://art/object/dummy-inv.png" id="1"]
+[ext_resource type="Shader" uid="uid://cpufdiocgwhyy" path="res://art/shaders/fade.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://b474cfuow3lfy" path="res://art/locations/vastmart-produce.png" id="3"]
+[ext_resource type="Script" path="res://scripts/Vastmart-Produce.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/Input.gd" id="5"]
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="6"]
+[ext_resource type="FontFile" path="res://fonts/MainFontItalic.tres" id="7"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="8"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBold.tres" id="9"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBoldItalic.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://c4fm8id8ibevf" path="res://art/actors/producewoman.png" id="11"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("2")
+shader_parameter/desaturation_strength = 1.0
+shader_parameter/darkness = 1.0
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Vastmart-Produce" type="Node2D"]
+script = ExtResource("4")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = SubResource("2")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+mouse_filter = 0
+texture = ExtResource("3")
+stretch_mode = 6
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="Lady" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 16.0
+offset_top = 181.0
+offset_right = 142.0
+offset_bottom = 354.0
+
+[node name="YellowPeppers" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 564.0
+offset_top = 423.0
+offset_right = 692.0
+offset_bottom = 520.0
+
+[node name="Oranges" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 22.0
+offset_top = 384.0
+offset_right = 259.0
+offset_bottom = 481.0
+
+[node name="Tomatoes" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 589.0
+offset_top = 211.0
+offset_right = 663.0
+offset_bottom = 299.0
+
+[node name="Lettuce" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 214.0
+offset_top = 146.0
+offset_right = 347.0
+offset_bottom = 242.0
+
+[node name="Pork" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 253.0
+offset_top = 279.0
+offset_right = 428.0
+offset_bottom = 422.0
+
+[node name="Cucumbers" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 799.0
+offset_top = 404.0
+offset_right = 984.0
+offset_bottom = 537.0
+
+[node name="Cucumbers2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 906.0
+offset_top = 303.0
+offset_right = 1078.0
+offset_bottom = 473.0
+
+[node name="Beef" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1002.0
+offset_top = 518.0
+offset_right = 1278.0
+offset_bottom = 629.0
+
+[node name="Beef2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1103.0
+offset_top = 335.0
+offset_right = 1281.0
+offset_bottom = 516.0
+
+[node name="Blocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.8645, 16.0374)
+
+[node name="ExitBackroom" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 287.0
+offset_top = 39.0
+offset_right = 494.0
+offset_bottom = 125.0
+
+[node name="ExitCheckout" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 2.0
+offset_top = 572.0
+offset_right = 209.0
+offset_bottom = 679.0
+
+[node name="ExitCheckout2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 204.0
+offset_top = 619.0
+offset_right = 1034.0
+offset_bottom = 682.0
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Woman" type="TextureRect" parent="MainWindow/LocationImage"]
+visible = false
+layout_mode = 0
+offset_left = 119.0
+offset_top = 37.0
+offset_right = 381.0
+offset_bottom = 299.0
+texture = ExtResource("11")
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 621.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+theme_override_fonts/italics_font = ExtResource("7")
+theme_override_fonts/bold_italics_font = ExtResource("10")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="ChoiceLabel" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 997.0
+offset_bottom = 47.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+bbcode_enabled = true
+text = "[You:]"
+
+[node name="Choices" type="Container" parent="MainWindow/Overlay/MainText"]
+visible = false
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 222.0
+
+[node name="Choice0" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+bbcode_enabled = true
+
+[node name="Choice1" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+bbcode_enabled = true
+
+[node name="Choice2" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Choice3" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("8")
+theme_override_styles/normal = SubResource("1")
+max_length = 47
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+caret_blink = true
+script = ExtResource("5")
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+texture = ExtResource("1")
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Lady" to="." method="_on_Lady_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Oranges" to="." method="_on_Oranges_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Tomatoes" to="." method="_on_Tomatoes_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Lettuce" to="." method="_on_Lettuce_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Pork" to="." method="_on_Pork_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Cucumbers" to="." method="_on_Cucumbers_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Cucumbers2" to="." method="_on_Cucumbers_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Beef" to="." method="_on_Beef_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Beef2" to="." method="_on_Beef_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Blocker" to="." method="_on_Blocker_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitBackroom" to="." method="_on_ExitBackroom_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitBackroom" to="." method="_on_ExitBackroom_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitBackroom" to="." method="_on_ExitBackroom_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitBackroom" to="." method="_on_ExitBackroom_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitCheckout2" to="." method="_on_ExitCheckout_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitCheckout2" to="." method="_on_ExitCheckout_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout2" to="." method="_on_ExitCheckout_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout2" to="." method="_on_ExitCheckout_tree_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/Command/TextEdit" to="MainWindow/Overlay/Command/TextEdit" method="_on_TextEdit_gui_input"]

@@ -1,0 +1,2 @@
+Scan items to see prices and
+order more inventory.

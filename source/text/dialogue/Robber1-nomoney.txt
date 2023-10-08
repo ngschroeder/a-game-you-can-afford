@@ -1,0 +1,53 @@
+[color=#778899][Man:]
+Good computer. Top of the line. I think it's
+worth a couple thousand.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+He looks around again nervously, then slides
+the computer halfway out from under his hoodie.
+[/color][/center]
+------------------------------------------------
+I recognize this model, we sell this at Vastmart
+- and it's about as cheap as they come.
+------------------------------------------------
+Still, it's new in the box.
+
+------------------------------------------------
+[color=#778899][Man:]
+*sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+*sniff* *sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+.
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+..
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+...
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+It fell off the truck. You interested?
+[/color]
+------------------------------------------------
+[color=lime][You:]
+How much?
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+You're lucky I gotta get rid of it quick. I'll
+give it to you for 20.
+[/color]
+------------------------------------------------
+CHOICES
+I don't have 20
+No thanks, I'm not interested.
+------------------------------------------------

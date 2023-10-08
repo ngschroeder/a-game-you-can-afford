@@ -1,0 +1,10 @@
+[center][color=#FFFF00]
+Do you really want to leave the store? You will
+be walking off the job in the middle of your
+shift, it might not go over well with Lauren.
+[/color][/center]
+------------------------------------------------
+CHOICES
+Yes, I can't stand this tedious circle of hell.
+On second thought, I should stay.
+------------------------------------------------

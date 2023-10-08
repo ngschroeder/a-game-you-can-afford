@@ -1,0 +1,53 @@
+[center][color=#FFFF00]
+A police officer approaches you.
+[/color][center]
+------------------------------------------------
+What the hell, I can't even sit in the goddamn
+park for 15 minutes...
+------------------------------------------------
+[color=#D87093][Officer:]
+Good evening.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Hello officer.
+[/color]
+------------------------------------------------
+[color=#D87093][Officer:]
+What brings you out to the park so late tonight?
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You point to your nametag.
+[/color][center]
+------------------------------------------------
+[color=lime][You:]
+Just got off work and needed to clear my head.
+I live over on the east side, and the fumes were
+really bothering me today.
+[/color]
+------------------------------------------------
+[color=#D87093][Officer:]
+Yeah, the air gets pretty nasty over there.
+[/color]
+------------------------------------------------
+She says some kind of code into the radio that's
+buried under the hair on her left shoulder. She
+must have called in before confronting you.
+------------------------------------------------
+[color=#D87093][Officer:]
+Sir, unfortunately the park is closed after
+10 P.M., so it would be best if you move along
+and head indoors for the night.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+Her demeanor is very neutral.
+She awaits your response.
+[/color][center]
+------------------------------------------------
+CHOICES
+[Agree to leave]
+[Push back gently]
+[Argue assertively]
+------------------------------------------------

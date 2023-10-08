@@ -1,0 +1,267 @@
+[gd_scene load_steps=13 format=3 uid="uid://cau3wqg1w6aqg"]
+
+[ext_resource type="Texture2D" uid="uid://d1h1dl0l0ealh" path="res://art/locations/apartment-ext-16.png" id="1"]
+[ext_resource type="Script" path="res://scripts/Apartment-Ext.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dqn4emyvy2p2d" path="res://art/object/Bike.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c6lrjd01cfigq" path="res://art/misc/bike-zoomed.png" id="4"]
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="5"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://b6mtnoqjyfxim" path="res://art/puzzles/bike/0.png" id="7"]
+[ext_resource type="Material" path="res://styles/GameOverShader.tres" id="8"]
+[ext_resource type="Shader" uid="uid://cpufdiocgwhyy" path="res://art/shaders/fade.tres" id="9"]
+[ext_resource type="Texture2D" uid="uid://c3su1to0xopep" path="res://art/actors/gunman-gun-outside.png" id="10"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("9")
+shader_parameter/desaturation_strength = 1.0
+shader_parameter/darkness = 1.0
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Apartment-Ext" type="Node2D"]
+script = ExtResource("2")
+
+[node name="MainWindow" type="Node2D" parent="."]
+material = ExtResource("8")
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = SubResource("2")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("1")
+stretch_mode = 6
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="ApartmentLeft" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 150.0
+offset_top = 199.0
+offset_right = 506.0
+offset_bottom = 614.0
+
+[node name="ApartmentRight" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 733.0
+offset_top = 169.0
+offset_right = 1114.0
+offset_bottom = 604.0
+
+[node name="ApartmentSky" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 9.0
+offset_top = 1.0
+offset_right = 1276.0
+offset_bottom = 136.0
+
+[node name="ApartmentSky2" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 521.0
+offset_top = 124.0
+offset_right = 732.0
+offset_bottom = 304.0
+
+[node name="ApartmentPath" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 527.0
+offset_top = 337.0
+offset_right = 731.0
+offset_bottom = 583.0
+
+[node name="Bike" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1139.0
+offset_top = 565.0
+offset_right = 1223.0
+offset_bottom = 616.0
+texture = ExtResource("3")
+
+[node name="ExitField" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 826.0
+offset_top = 506.0
+offset_right = 930.0
+offset_bottom = 620.0
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Actor" type="TextureRect" parent="MainWindow/LocationImage"]
+visible = false
+layout_mode = 0
+offset_left = 489.0
+offset_top = 123.0
+offset_right = 857.0
+offset_bottom = 640.0
+texture = ExtResource("10")
+
+[node name="BikeZoomed" type="TextureRect" parent="MainWindow"]
+visible = false
+offset_left = 426.0
+offset_top = 40.0
+offset_right = 853.0
+offset_bottom = 680.0
+texture = ExtResource("4")
+
+[node name="Lock" type="Container" parent="MainWindow/BikeZoomed"]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 418.0
+offset_right = 264.0
+offset_bottom = 492.0
+
+[node name="Puzzle" type="ColorRect" parent="MainWindow/BikeZoomed"]
+visible = false
+layout_mode = 0
+offset_left = 110.0
+offset_top = 185.0
+offset_right = 315.0
+offset_bottom = 240.0
+color = Color(0, 0, 0, 1)
+
+[node name="0" type="TextureRect" parent="MainWindow/BikeZoomed/Puzzle"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 50.0
+texture = ExtResource("7")
+
+[node name="1" type="TextureRect" parent="MainWindow/BikeZoomed/Puzzle"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 4.0
+offset_right = 84.0
+offset_bottom = 50.0
+texture = ExtResource("7")
+
+[node name="2" type="TextureRect" parent="MainWindow/BikeZoomed/Puzzle"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 124.0
+offset_bottom = 50.0
+texture = ExtResource("7")
+
+[node name="3" type="TextureRect" parent="MainWindow/BikeZoomed/Puzzle"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 50.0
+texture = ExtResource("7")
+
+[node name="4" type="TextureRect" parent="MainWindow/BikeZoomed/Puzzle"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 4.0
+offset_right = 204.0
+offset_bottom = 50.0
+texture = ExtResource("7")
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 620.0
+theme_override_styles/panel = ExtResource("5")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("6")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("5")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/normal = SubResource("1")
+text = "Hey here's some text"
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("5")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("6")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="Flash" type="ColorRect" parent="MainWindow"]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(1, 1, 1, 0.6)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ApartmentLeft" to="." method="_on_ApartmentLeft_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ApartmentRight" to="." method="_on_ApartmentRight_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ApartmentSky" to="." method="_on_ApartmentSky_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ApartmentSky2" to="." method="_on_ApartmentSky_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ApartmentPath" to="." method="_on_ApartmentPath_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_tree_exited"]
+[connection signal="mouse_entered" from="MainWindow/BikeZoomed" to="." method="_on_BikeZoomed_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/BikeZoomed" to="." method="_on_BikeZoomed_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Lock" to="." method="_on_Lock_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/BikeZoomed/Lock" to="." method="_on_Lock_mouse_entered"]
+[connection signal="mouse_entered" from="MainWindow/BikeZoomed/Puzzle" to="." method="_on_Puzzle_mouse_entered"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Puzzle/0" to="." method="_on_0_gui_input"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Puzzle/1" to="." method="_on_1_gui_input"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Puzzle/2" to="." method="_on_2_gui_input"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Puzzle/3" to="." method="_on_3_gui_input"]
+[connection signal="gui_input" from="MainWindow/BikeZoomed/Puzzle/4" to="." method="_on_4_gui_input"]

@@ -1,0 +1,197 @@
+[gd_scene load_steps=15 format=3 uid="uid://bk6aurb7kvj05"]
+
+[ext_resource type="Texture2D" uid="uid://d4jskmrgigeoe" path="res://art/object/dummy-inv.png" id="1"]
+[ext_resource type="Shader" uid="uid://cpufdiocgwhyy" path="res://art/shaders/fade.tres" id="2"]
+[ext_resource type="Script" path="res://scripts/Bathroom.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://ctvmy6tf748by" path="res://art/locations/bathroom-16.png" id="4"]
+[ext_resource type="Script" path="res://scripts/Input.gd" id="5"]
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="6"]
+[ext_resource type="FontFile" path="res://fonts/MainFontItalic.tres" id="7"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="8"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBold.tres" id="9"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBoldItalic.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://b8imib4ffbxjf" path="res://art/object/clothes.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://whppyw403ewr" path="res://art/object/pajamas.png" id="12"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("2")
+shader_parameter/desaturation_strength = 1.0
+shader_parameter/darkness = 1.0
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Bathroom" type="Node2D"]
+script = ExtResource("3")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = SubResource("2")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+mouse_filter = 0
+texture = ExtResource("4")
+stretch_mode = 6
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="ExitFieldLeft" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 393.0
+offset_bottom = 641.0
+
+[node name="ExitFieldRight" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 892.0
+offset_top = 2.0
+offset_right = 1279.0
+offset_bottom = 642.0
+
+[node name="WorkClothes" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 505.0
+offset_top = 145.0
+offset_right = 580.0
+offset_bottom = 347.0
+texture = ExtResource("11")
+
+[node name="BathWindow" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 639.0
+offset_top = 85.0
+offset_right = 687.0
+offset_bottom = 168.0
+
+[node name="Shelf" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 676.0
+offset_top = 191.0
+offset_right = 757.0
+offset_bottom = 240.0
+
+[node name="Toilet" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 653.0
+offset_top = 505.0
+offset_right = 764.0
+offset_bottom = 637.0
+
+[node name="BathSink" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 570.0
+offset_top = 382.0
+offset_right = 714.0
+offset_bottom = 452.0
+
+[node name="Pajamas" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_left = 498.0
+offset_top = 547.0
+offset_right = 618.0
+offset_bottom = 613.0
+texture = ExtResource("12")
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 621.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+theme_override_fonts/italics_font = ExtResource("7")
+theme_override_fonts/bold_italics_font = ExtResource("10")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("8")
+theme_override_styles/normal = SubResource("1")
+max_length = 47
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+caret_blink = true
+script = ExtResource("5")
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+texture = ExtResource("1")
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitFieldLeft" to="." method="_on_ExitField_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitFieldLeft" to="." method="_on_ExitField_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitFieldLeft" to="." method="_on_ExitField_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitFieldLeft" to="." method="_on_ExitField_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitFieldRight" to="." method="_on_ExitField_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitFieldRight" to="." method="_on_ExitField_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitFieldRight" to="." method="_on_ExitField_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitFieldRight" to="." method="_on_ExitField_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/WorkClothes" to="." method="_on_WorkClothes_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/BathWindow" to="." method="_on_BathWindow_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Shelf" to="." method="_on_Shelf_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Toilet" to="." method="_on_Toilet_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/BathSink" to="." method="_on_BathSink_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Pajamas" to="." method="_on_Pajamas_gui_input"]
+[connection signal="gui_input" from="MainWindow/Overlay/Command/TextEdit" to="MainWindow/Overlay/Command/TextEdit" method="_on_TextEdit_gui_input"]

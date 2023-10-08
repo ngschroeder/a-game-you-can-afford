@@ -1,0 +1,50 @@
+[color=fuchsia][Lauren:]
+Uhh... sure thing.
+[/color]
+------------------------------------------------
+She's looking at me like I'm an escaped mental
+patient. Probably because I've worked here for a
+long time now, and should know how to do a task
+they teach you on your first day.
+------------------------------------------------
+[color=fuchsia][Lauren:]
+You pick an item on the shelf, point the scanner
+at the bar code on the SKU label, and pull the
+trigger.
+[/color]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+The item will load, and you can check how much
+stock we have in total. Update the info so the
+vendors know if they need to send more.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You stare at her intently, just to keep
+it maximally awkward.
+[/color][/center]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+The scanner will work on any SKU out on the
+floor, but we really need you focused over in
+the kitchenware and produce departments.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You continue to hold the same unflinching
+facial expression.
+[/color][/center]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+Okay... anything else?
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Nope, that was it. Thanks!
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+She walks off, locked in a confused gaze with
+you for an uncomfortable amount of time.
+[/color][/center]
+------------------------------------------------

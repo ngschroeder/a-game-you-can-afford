@@ -1,0 +1,231 @@
+[gd_scene load_steps=12 format=3 uid="uid://dmwedh3ljk0ky"]
+
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="1"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://bh3cv75u2kd53" path="res://art/actors/officer-happy-16.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bi2yd0r25noeh" path="res://art/locations/park-16.png" id="4"]
+[ext_resource type="Script" path="res://scripts/Park.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://cthuydid2huxn" path="res://art/object/Vastmark-Bike.png" id="6"]
+[ext_resource type="FontFile" path="res://fonts/MainFontItalic.tres" id="7"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBold.tres" id="8"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBoldItalic.tres" id="9"]
+[ext_resource type="Material" path="res://styles/GameOverShader.tres" id="10"]
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Park" type="Node2D"]
+script = ExtResource("5")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = ExtResource("10")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("4")
+
+[node name="Actor" type="TextureRect" parent="MainWindow/LocationImage"]
+visible = false
+layout_mode = 0
+offset_left = 338.0
+offset_top = 40.0
+offset_right = 711.0
+offset_bottom = 640.0
+texture = ExtResource("3")
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="Bike" type="TextureRect" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1113.0
+offset_top = 430.0
+offset_right = 1257.0
+offset_bottom = 502.0
+texture = ExtResource("6")
+
+[node name="Bench1" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 240.0
+offset_top = 511.0
+offset_right = 460.0
+offset_bottom = 586.0
+
+[node name="Bench2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 755.0
+offset_top = 512.0
+offset_right = 893.0
+offset_bottom = 580.0
+
+[node name="Trees1" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 875.0
+offset_top = 15.0
+offset_right = 1253.0
+offset_bottom = 263.0
+
+[node name="Trees2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 103.0
+offset_top = -1.0
+offset_right = 490.0
+offset_bottom = 226.0
+
+[node name="Pavilion" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 527.0
+offset_top = 174.0
+offset_right = 834.0
+offset_bottom = 486.0
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 621.0
+theme_override_styles/panel = ExtResource("1")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/bold_font = ExtResource("8")
+theme_override_fonts/italics_font = ExtResource("7")
+theme_override_fonts/bold_italics_font = ExtResource("9")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="ChoiceLabel" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 997.0
+offset_bottom = 47.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("2")
+bbcode_enabled = true
+text = "[You:]"
+
+[node name="Choices" type="Container" parent="MainWindow/Overlay/MainText"]
+visible = false
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 222.0
+
+[node name="Choice0" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/bold_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Choice1" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/bold_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Choice2" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/bold_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Choice3" type="RichTextLabel" parent="MainWindow/Overlay/MainText/Choices"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_fonts/bold_font = ExtResource("8")
+bbcode_enabled = true
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("1")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/normal = SubResource("1")
+text = "Hey here's some text"
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("1")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("2")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="Flash" type="ColorRect" parent="MainWindow"]
+visible = false
+offset_right = 1284.0
+offset_bottom = 718.0
+color = Color(1, 0.819608, 0, 0.454902)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/Bike" to="." method="_on_Bike_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Bench1" to="." method="_on_Bench_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Bench2" to="." method="_on_Bench_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Trees1" to="." method="_on_Trees_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Trees2" to="." method="_on_Trees_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/BigBlocker" to="." method="_on_BigBlocker_gui_input"]
+[connection signal="gui_input" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/Overlay/MainText/Choices/Choice0" to="." method="_on_Choice0_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/Overlay/MainText/Choices/Choice1" to="." method="_on_Choice1_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/MainText/Choices/Choice2" to="." method="_on_Choice2_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/Overlay/MainText/Choices/Choice2" to="." method="_on_Choice2_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/Overlay/MainText/Choices/Choice2" to="." method="_on_Choice2_mouse_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/Command/TextEdit" to="MainWindow/Overlay/Command/TextEdit" method="_on_TextEdit_gui_input"]

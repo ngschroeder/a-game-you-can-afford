@@ -1,0 +1,39 @@
+They seem pretty wired for 2 o'clock in the
+morning. Must be coming home from a bar or
+something.
+------------------------------------------------
+[color=lime][You:]
+Hi there. How can I help you?
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+Hey buddy. Give me a twelve-pack of Hamschlager
+Lite.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+The woman tugs on his hand and smiles.
+[/color][/center]
+------------------------------------------------
+[color=#00CED1][Man:]
+And a pack of rolling papers, too.
+[/color]
+------------------------------------------------
+Well, here we go. He said "give me" instead of
+something polite, so I expect he's not going to
+take this news too well...
+------------------------------------------------
+[center][color=#FFFF00]
+You put the rolling papers in the bin
+and push it out to them.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+You pre-emptively put on a polite smile...
+[/color][/center]
+------------------------------------------------
+[color=lime][You:]
+Here's your papers, but I'm sorry on the beers,
+you're 9 minutes past the cutoff.
+[/color]
+------------------------------------------------

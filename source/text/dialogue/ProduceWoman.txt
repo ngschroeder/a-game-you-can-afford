@@ -1,0 +1,17 @@
+[center][color=#FFFF00]                 
+The woman turns around abruptly.
+She does not look happy.
+[/color][/center]
+------------------------------------------------
+[color=aqua][Woman:]
+Hey, what the hell are you doing?
+[/color]
+------------------------------------------------
+Shit.
+
+------------------------------------------------
+CHOICES
+[Make an excuse and apologize]
+[Attempt to flirt]
+
+------------------------------------------------

@@ -1,0 +1,24 @@
+[center][color=#FFFF00]
+
+You feel a sudden, sharp pain in your abdomen.
+
+[/color][/center]
+------------------------------------------------
+YEEARRRGGGHHH!!!
+
+------------------------------------------------
+[center][color=#FFFF00]
+You clutch your stomach, doubled over in agony.
+The searing pain causes you to lose control of
+your bowels right there.
+[/color][/center]
+------------------------------------------------
+What... what the hell ... ?
+------------------------------------------------
+[center][color=#FFFF00]
+Suffering from extreme shock, you fall to your
+knees, then slump over and lose consciousness.
+[/color][/center]
+------------------------------------------------
+GAMEOVER
+------------------------------------------------

@@ -1,0 +1,5 @@
+[center][color=#FFFF00]
+It's too dark to see anything. You should try
+turning on a light.
+[/color][/center]
+------------------------------------------------

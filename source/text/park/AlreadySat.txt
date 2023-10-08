@@ -1,0 +1,4 @@
+[center][color=#FFFF00]
+You're already sitting on a bench.
+[/color][center]
+------------------------------------------------

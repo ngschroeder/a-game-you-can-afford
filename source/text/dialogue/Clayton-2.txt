@@ -1,0 +1,19 @@
+[center][color=#FFFF00]
+You can't even see straight, you're so angry.
+Everything is fuzzy. But somehow, you
+maintain your composure.
+[/color][/center]
+------------------------------------------------
+[color=lime][You:]
+Fine, I'm leaving.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+Clayton's stance softens a bit, but he doesn't
+adjust his hostile tone at all.
+[/color][/center]
+------------------------------------------------
+[color=#FF8C00][Clayton:]
+Good, now let's go.
+[/color]
+------------------------------------------------

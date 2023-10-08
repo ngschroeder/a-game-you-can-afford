@@ -1,0 +1,41 @@
+Uh oh, she came back. She looks kind of unhappy.
+
+------------------------------------------------
+[color=fuchsia][Lauren:]
+One last thing...
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Sure, what's up?
+[/color]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+This is really uncomfortable to mention, and I'm
+really sorry, but... you smell.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You reflexively sniff to try and smell yourself,
+but you can't. You stink so often, you've become
+numb to the stench of your own body odor.
+[/color][/center]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+Your breath is really bad too, and your face is
+all crusty. I'm sorry, but customers keep
+complaining about you, so I'm going to have to
+write you up on this one.[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You feel small and pathetic, and it's
+reflected in your tone.
+[/color][/center]
+------------------------------------------------
+[color=lime][You:]
+Sorry, I'll wash up in the restroom.
+[/color]
+------------------------------------------------
+[color=fuchsia][Lauren:]
+Thanks. No hard feelings, just company policy.
+[/color]
+------------------------------------------------

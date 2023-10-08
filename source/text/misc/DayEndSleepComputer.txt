@@ -1,0 +1,5 @@
+Are you sure you want to go to sleep?
+
+CHOICES
+Yes, I'm exhausted. To hell with this day.
+On second thought, maybe I could do more...

@@ -1,0 +1,23 @@
+[center][color=#FFFF00]
+The secuirty officer, Clayton, meets you.
+He stands in front of you, looming, while an
+associate serves you with termination paperwork.
+[/color][/center]
+------------------------------------------------
+[color=#FF8C00][Clayton:]
+Hey you. Store says you're terminated, so I'm
+afraid you gotta leave. Now.
+[/color]
+------------------------------------------------
+Shit, I can't believe this is happening.
+
+------------------------------------------------
+I really can't afford to lose this job. What
+should I do here? I'm starting to freak out...
+
+------------------------------------------------
+CHOICES
+I understand. I'm ready to go.
+This has to be a misunderstanding...
+Listen you fucking lummox, you'll have to...
+------------------------------------------------

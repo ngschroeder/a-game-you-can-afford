@@ -1,0 +1,67 @@
+[center][color=#FFFF00]You decide to try and learn how to make video
+games. You start off using something you think
+will be simple: Java. You have a rough idea of
+a simple adventure game you'd like to make.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]As you start off, you quickly realize that you
+have [b]A LOT[/b] to learn. You spend weeks just
+getting familiar with the concepts of object-
+oriented programming, before you're even able
+to start the first line of code in your project.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]
+The weeks turn into months. You spend countless
+hours watching tutorials and reading the famous
+tech troubleshooting website TraceOverflow.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]In addition to not knowing how to write code,
+you also don't know how to compose music. You
+don't know how to create digital art. All of
+these things add more months to your project.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]
+Every day is just a torturous chore to get
+through work in order to make it home and work
+on your project. It's all you think about.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]The months turn into a year. Then two years. All
+for a game that's maybe an hour long at most.
+But you feel close to being finished, so you
+remain committed to getting the game done.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]At long last, you begin the publishing process.
+You discover that the biggest platforms charge
+money to host your game. You scrape together
+the savings, and finally get your game out.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]But you have no advertising budget. No one
+knows it exists. The price is very low - only
+a few dollars - so after a couple of days,
+someone finally buys it. They leave a bad
+review saying they ecountered bugs and crashes.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]
+You didn't have any money to pay for QA, so it
+appears you missed many game-breaking bugs.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]In the end, four people buy your game, and it
+gets a mostly negative rating. But, ultimately,
+you don't care. You are happy that you finally
+accomplished something - you finished a project.
+[/color][center]
+------------------------------------------------
+[center][color=#FFFF00]
+By the time your learning journey is complete,
+you think you know enough for an entry-level job
+in IT, and begin the search for a better life.
+[/color][center]
+------------------------------------------------

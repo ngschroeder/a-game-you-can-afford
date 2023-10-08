@@ -1,0 +1,52 @@
+[color=lime][You:]
+This has to be a misunderstanding, I haven't
+gotten three strikes yet!
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+Your ears are starting to burn. Your hands are
+shaking.
+[/color][/center]
+------------------------------------------------
+[color=#FF8C00][Clayton:]
+Look, not that it's any of my business, but you
+have more than that.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+The ringing in your ears is getting louder.
+You're beginning to get tunnel vision.
+[/color][/center]
+------------------------------------------------
+[color=lime][You:]
+I can't... I need this job... I'll end up home-
+less if I get fired from here...
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+Clayton takes a confrontational stance. Your
+head is swimming. Your fists clench.
+[/color][/center]
+------------------------------------------------
+[color=#FF8C00][Clayton:]
+I need a job too. And right now, my job is to
+get you out of this store.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+
+He also clenches his fists.
+
+[/color][/center]
+------------------------------------------------
+[color=#FF8C00][Clayton:]
+One way or another.
+[/color]
+------------------------------------------------
+I can't even think right now...
+
+------------------------------------------------
+CHOICES
+[Give up and leave peacefully]
+[Have an aggressive public freakout]
+------------------------------------------------

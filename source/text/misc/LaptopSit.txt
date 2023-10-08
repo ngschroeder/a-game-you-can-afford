@@ -1,0 +1,10 @@
+[center][color=#FFFF00]
+You sit down at the desk and ponder what to do.
+[/color][center]
+------------------------------------------------
+CHOICES
+[Try to get rich fast]
+[Become a streamer]
+[Learn basic coding and tech support]
+[Make a video game]
+------------------------------------------------

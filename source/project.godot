@@ -1,0 +1,57 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="A Game You Can Afford In This Economy"
+run/main_scene="res://scenes/MainMenu.tscn"
+config/features=PackedStringArray("4.1")
+config/icon="res://art/newicon.png"
+config/windows_native_icon="res://art/newesticon.ico"
+
+[autoload]
+
+Globals="*res://scripts/Globals.gd"
+
+[debug]
+
+settings/fps/force_fps=60
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/resizable=false
+window/vsync/vsync_mode=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+shading/overrides/force_vertex_shading.mobile=false
+shading/overrides/force_lambert_over_burley.mobile=false
+driver/depth_prepass/enable=false
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+quality/reflections/texture_array_reflections=false
+quality/reflections/high_quality_ggx=false
+shading/overrides/force_blinn_over_ggx.mobile=false
+quality/filters/anisotropic_filter_level=1
+quality/spatial_partitioning/use_bvh=false
+quality/lightmapping/use_bicubic_sampling=false
+quality/subsurface_scattering/weight_samples=false
+quality/depth/hdr=false
+quality/dynamic_fonts/use_oversampling=false

@@ -1,0 +1,18 @@
+[color=lime][You:]
+This damned thing! I'm so sorry, I didn't mean
+to do that, this thing is always giving me
+trouble. We've got a replacement on the way...
+[/color]
+------------------------------------------------
+[color=#D2B48C][Man:]
+OK. No problem, I guess.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]                 
+He didn't seem happy, but he accepted your
+apology and went back to his shopping.
+[/color][/center]
+------------------------------------------------
+Whew, that was close.
+
+------------------------------------------------

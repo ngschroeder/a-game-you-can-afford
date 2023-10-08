@@ -1,0 +1,11 @@
+[center][color=#FFFF00]The secuirty officer, Clayton, meets you as you
+enter the store. He stands in front of you,
+looming, while a associate serves you with
+termination paperwork.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+It appears you have committed too many offenses
+to remain employed here. You are escorted out.
+[/color][/center]
+------------------------------------------------

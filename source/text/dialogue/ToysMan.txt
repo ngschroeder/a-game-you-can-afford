@@ -1,0 +1,17 @@
+[center][color=#FFFF00]                 
+The man turns around slowly.
+He seems annoyed by your antics.
+[/color][/center]
+------------------------------------------------
+[color=#D2B48C][Man:]
+Excuse me?
+[/color]
+------------------------------------------------
+Shit.
+
+------------------------------------------------
+CHOICES
+[Make an excuse and apologize]
+[Attempt to flirt]
+
+------------------------------------------------

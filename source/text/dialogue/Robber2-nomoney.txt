@@ -1,0 +1,33 @@
+[color=lime][You:]
+I don't have 20.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+He looks increasingly agitated. He's twitching
+more and sniffing a lot. He seems manic.
+[/color][/center]
+------------------------------------------------
+[color=#778899][Man:]
+Shit. Alright goddamn it, I'll take 5.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Sorry man, I don't even have 5.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+He's trying to keep his cool, but he looks mad.
+[/color][/center]
+------------------------------------------------
+[color=#778899][Man:]
+*sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+*sniff* *sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+OK, it's aight.
+[/color]
+------------------------------------------------

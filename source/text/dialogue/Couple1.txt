@@ -1,0 +1,101 @@
+[color=#00CED1][Man:]
+Ha ha, very funny.
+[/color]
+------------------------------------------------
+Not-so-shockingly, they are upset. It's pretty
+much the same script, every time this happens.
+------------------------------------------------
+First, we start with denial...
+
+------------------------------------------------
+[color=#00CED1][Man:]
+Just get me the beers man, I was here on time.
+[/color]
+------------------------------------------------
+[color=#C71585][Woman:]
+Yeah, I think... I think your clock is just fast
+or something. We were definitely here in time.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Yeah, no... I'm really sorry, but the clocks are
+all set right, and I can't sell past 2 AM.
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+Hey, I'm the goddamned customer here, and I want
+my fucking beer, [b][i]now[/i][/b].
+[/color]
+------------------------------------------------
+[color=lime][You:]
+.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+..
+[/color]
+------------------------------------------------
+[color=lime][You:]
+...
+[/color]
+------------------------------------------------
+[color=lime][You:]
+That'll be four dollars for the rolling papers.
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+.
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+..
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+...
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+Alright, how about I give you TEN BUCKS to give
+me the beer? How's that sound?
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Look even if I wanted to sell you beer, I can't.
+The register won't ring it up after the cutoff.
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+.
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+..
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+...
+[/color]
+------------------------------------------------
+[color=#00CED1][Man:]
+I will give you [b]twenty dollars[/b] plus the price of
+the beer if you just give it to me. Tear the bar
+code off and scan it tomorrow.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]You find yourself considering his offer.
+There's a chance you're being watched, or the
+owner might review the tape at some point.
+But you could use the money.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]Inventory won't be checked for a few days, you
+could just ring up a pack of beer tomorrow and
+put the money in the register. Without looking
+at the video, no one would know...
+[/color][/center]
+------------------------------------------------
+CHOICES
+[Screw it, give him the beer.]
+[Don't give him the beer.]
+------------------------------------------------

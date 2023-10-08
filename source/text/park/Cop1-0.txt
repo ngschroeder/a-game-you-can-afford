@@ -1,0 +1,20 @@
+Why pick a fight that I have no hope of winning?
+
+------------------------------------------------
+[color=lime][You:]
+Sure thing officer, sorry about that. I guess I
+missed the sign with the park hours.
+[/color]
+------------------------------------------------
+I didn't miss the sign, I just figured I'd ask
+for forgiveness if I got caught.
+------------------------------------------------
+[color=#D87093][Officer:]
+Sorry to spoil your quiet night, but thanks for
+your cooperation. Have a good night.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+You too.
+[/color]
+------------------------------------------------

@@ -1,0 +1,30 @@
+[center][color=#FFFF00]                 
+You left your bike unlocked. While you were
+inside, someone stole it.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+You have no money for ride-share apps or the
+bus, and no friends good enough or near enough
+to give you a ride.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+This is it. The one careless mistake you were
+always terrified you would make.
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+Your heart is racing. What are you going to do?
+What can you do?
+[/color][/center]
+------------------------------------------------
+[center][color=#FFFF00]
+The tragic answer is: Nothing.
+There is nothing you can do at this point.
+[/color][/center]
+------------------------------------------------
+Well, shit.
+------------------------------------------------
+GAMEOVER
+------------------------------------------------

@@ -1,0 +1,29 @@
+[color=lime][You:]
+Yeah OK, I'll take it.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+You put the money in the bin and push it out.
+[/color][/center]
+------------------------------------------------
+[color=#778899][Man:]
+You got it for a great deal, man.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+He puts the computer in the bin and pushes
+it back over to you.
+[/color][/center]
+------------------------------------------------
+[color=lime][You:]
+I know I did. Thanks. Stay safe out there.
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+You too.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+The man leaves the store.
+[/color][/center]
+------------------------------------------------

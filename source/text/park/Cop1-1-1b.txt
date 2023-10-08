@@ -1,0 +1,15 @@
+[color=#D87093][Officer:]
+SIR! THIS IS YOUR LAST WARNING!
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+The officer draws her weapon.
+[/color][center]
+------------------------------------------------
+Shit, maybe I should listen.
+
+------------------------------------------------
+CHOICES
+[Comply]
+[Screw it, keep arguing]
+------------------------------------------------

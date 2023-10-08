@@ -1,0 +1,53 @@
+[center][color=#FFFF00]
+You can't help but feel like you're not allowed
+to have a moment of peace, so you decide to say
+something, as diplomatically as you can.
+[/color][center]
+------------------------------------------------
+[color=lime][You:]
+Officer, I'm clearly not hurting anyone or doing
+anything illegal here. I'm having a bad day, I
+work 3 jobs and this is the only time I can find
+to escape for a few minutes of peace.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+Can you find it in your heart to have some mercy
+on me? All I'm after here is some quiet and some
+fresh air away from the factories.
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+She's starting to look irritated, but
+her tone is still sympathetic.
+[/color][center]
+------------------------------------------------
+[color=#D87093][Officer:]
+I understand. I'm here working late, too. But
+there are criminal elements that frequent this
+park.
+[/color]
+------------------------------------------------
+[color=#D87093][Officer:]
+So for your own safety, and for the safety of
+everyone, park is closed overnight.
+[/color]
+------------------------------------------------
+[color=lime][You:]
+So the fact that no one else is here, and I'm
+willing to take that risk doesn't matter?
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+She's starting to sound more irritated.
+[/color][center]
+------------------------------------------------
+[color=#D87093][Officer:]
+It doesn't matter, I'm sorry. The park is
+closed, and you have to leave.
+[/color]
+------------------------------------------------
+CHOICES
+[Leave]
+[Refuse]
+------------------------------------------------

@@ -1,0 +1,149 @@
+[gd_scene load_steps=14 format=3 uid="uid://ujd4ag88aogi"]
+
+[ext_resource type="Texture2D" uid="uid://d4jskmrgigeoe" path="res://art/object/dummy-inv.png" id="1"]
+[ext_resource type="Shader" uid="uid://cpufdiocgwhyy" path="res://art/shaders/fade.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://bovi2dl8ybfye" path="res://art/locations/ztemplate-16.png" id="3"]
+[ext_resource type="Script" path="res://scripts/Z-Template.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/Input.gd" id="5"]
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="6"]
+[ext_resource type="FontFile" path="res://fonts/MainFontItalic.tres" id="7"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="8"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBold.tres" id="9"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBoldItalic.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://btmghx2qbislg" path="res://art/actors/lauren.png" id="11"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("2")
+shader_parameter/desaturation_strength = 1.0
+shader_parameter/darkness = 1.0
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Z-Template" type="Node2D"]
+script = ExtResource("4")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = SubResource("2")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+mouse_filter = 0
+texture = ExtResource("3")
+stretch_mode = 6
+
+[node name="Actor" type="TextureRect" parent="MainWindow/LocationImage"]
+visible = false
+layout_mode = 0
+offset_left = 836.0
+offset_right = 1219.0
+offset_bottom = 640.0
+texture = ExtResource("11")
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="ExitField" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 271.0
+offset_top = 86.0
+offset_right = 448.0
+offset_bottom = 423.0
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 621.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+theme_override_fonts/italics_font = ExtResource("7")
+theme_override_fonts/bold_italics_font = ExtResource("10")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("8")
+theme_override_styles/normal = SubResource("1")
+max_length = 47
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+caret_blink = true
+script = ExtResource("5")
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+texture = ExtResource("1")
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitField" to="." method="_on_ExitField_tree_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/Command/TextEdit" to="MainWindow/Overlay/Command/TextEdit" method="_on_TextEdit_gui_input"]

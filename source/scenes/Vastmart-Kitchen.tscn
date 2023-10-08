@@ -1,0 +1,237 @@
+[gd_scene load_steps=13 format=3 uid="uid://dxvmetk1f1i8g"]
+
+[ext_resource type="Texture2D" uid="uid://d4jskmrgigeoe" path="res://art/object/dummy-inv.png" id="1"]
+[ext_resource type="Shader" uid="uid://cpufdiocgwhyy" path="res://art/shaders/fade.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://cs8stsxffdyi1" path="res://art/locations/vastmart-kitchenware.png" id="3"]
+[ext_resource type="Script" path="res://scripts/Vastmart-Kitchen.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/Input.gd" id="5"]
+[ext_resource type="StyleBox" path="res://styles/MainText.tres" id="6"]
+[ext_resource type="FontFile" path="res://fonts/MainFontItalic.tres" id="7"]
+[ext_resource type="FontFile" path="res://fonts/MainFont.tres" id="8"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBold.tres" id="9"]
+[ext_resource type="FontFile" path="res://fonts/MainFontBoldItalic.tres" id="10"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("2")
+shader_parameter/desaturation_strength = 1.0
+shader_parameter/darkness = 1.0
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Vastmart-Kitchen" type="Node2D"]
+script = ExtResource("4")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="LocationImage" type="TextureRect" parent="MainWindow"]
+material = SubResource("2")
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+mouse_filter = 0
+texture = ExtResource("3")
+stretch_mode = 6
+
+[node name="Interactives" type="Node2D" parent="MainWindow/LocationImage"]
+
+[node name="CoffeePot" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 228.0
+offset_top = 116.0
+offset_right = 359.0
+offset_bottom = 314.0
+
+[node name="CoffeePot2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 552.0
+offset_top = 117.0
+offset_right = 775.0
+offset_bottom = 315.0
+
+[node name="CoffeeStuff" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 786.0
+offset_top = 175.0
+offset_right = 1245.0
+offset_bottom = 325.0
+
+[node name="BreadMaker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 180.0
+offset_top = 397.0
+offset_right = 417.0
+offset_bottom = 590.0
+
+[node name="BreadMaker2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 424.0
+offset_top = 419.0
+offset_right = 616.0
+offset_bottom = 586.0
+
+[node name="FoodSaver" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 650.0
+offset_top = 421.0
+offset_right = 1171.0
+offset_bottom = 617.0
+
+[node name="Microwave" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 815.0
+offset_top = -2.0
+offset_right = 1052.0
+offset_bottom = 134.0
+
+[node name="Microwave2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1082.0
+offset_top = 3.0
+offset_right = 1276.0
+offset_bottom = 139.0
+
+[node name="Fryer" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 411.0
+offset_top = 126.0
+offset_right = 546.0
+offset_bottom = 322.0
+
+[node name="Toaster" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 42.0
+offset_top = 158.0
+offset_right = 193.0
+offset_bottom = 298.0
+
+[node name="Blocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.9523, 16.0396)
+
+[node name="ExitToys" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1.0
+offset_top = 572.0
+offset_right = 157.0
+offset_bottom = 680.0
+
+[node name="ExitToys2" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 57.0
+offset_bottom = 680.0
+
+[node name="ExitCheckout" type="Container" parent="MainWindow/LocationImage/Interactives"]
+offset_left = 1183.0
+offset_top = 364.0
+offset_right = 1277.0
+offset_bottom = 678.0
+
+[node name="BigBlocker" type="Container" parent="MainWindow/LocationImage/Interactives"]
+visible = false
+offset_right = 1279.0
+offset_bottom = 677.0
+
+[node name="Overlay" type="Node2D" parent="MainWindow"]
+
+[node name="MainText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 400.0
+offset_right = 1140.0
+offset_bottom = 621.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="Body" type="RichTextLabel" parent="MainWindow/Overlay/MainText"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 111.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+theme_override_fonts/bold_font = ExtResource("9")
+theme_override_fonts/italics_font = ExtResource("7")
+theme_override_fonts/bold_italics_font = ExtResource("10")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Command" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 140.0
+offset_top = 647.0
+offset_right = 1140.0
+offset_bottom = 699.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="TextEdit" type="LineEdit" parent="MainWindow/Overlay/Command"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 505.0
+offset_bottom = 24.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("8")
+theme_override_styles/normal = SubResource("1")
+max_length = 47
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+caret_blink = true
+script = ExtResource("5")
+
+[node name="ItemText" type="Panel" parent="MainWindow/Overlay"]
+visible = false
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 940.0
+offset_bottom = 524.0
+theme_override_styles/panel = ExtResource("6")
+
+[node name="ItemImage" type="TextureRect" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 400.0
+offset_bottom = 216.0
+texture = ExtResource("1")
+stretch_mode = 6
+
+[node name="ItemBody" type="RichTextLabel" parent="MainWindow/Overlay/ItemText"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 257.0
+offset_right = 298.0
+offset_bottom = 297.0
+scale = Vector2(2, 2)
+theme_override_fonts/normal_font = ExtResource("8")
+text = "You got an item.aaaaaaaaaaaa
+Great for certain stuff."
+scroll_active = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/CoffeePot" to="." method="_on_CoffeePot_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/CoffeePot2" to="." method="_on_CoffeePot2_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/CoffeeStuff" to="." method="_on_CoffeeStuff_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/BreadMaker" to="." method="_on_BreadMaker_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/BreadMaker2" to="." method="_on_BreadMaker2_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/FoodSaver" to="." method="_on_FoodSaver_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Microwave" to="." method="_on_Microwave_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Microwave2" to="." method="_on_Microwave2_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Fryer" to="." method="_on_Fryer_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Toaster" to="." method="_on_Toaster_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/Blocker" to="." method="_on_Blocker_gui_input"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitToys" to="." method="_on_ExitToys_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitToys" to="." method="_on_ExitToys_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitToys" to="." method="_on_ExitToys_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitToys" to="." method="_on_ExitToys_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitToys2" to="." method="_on_ExitToys_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitToys2" to="." method="_on_ExitToys_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitToys2" to="." method="_on_ExitToys_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitToys2" to="." method="_on_ExitToys_tree_exited"]
+[connection signal="gui_input" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_gui_input"]
+[connection signal="mouse_entered" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_mouse_entered"]
+[connection signal="mouse_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_mouse_exited"]
+[connection signal="tree_exited" from="MainWindow/LocationImage/Interactives/ExitCheckout" to="." method="_on_ExitCheckout_tree_exited"]
+[connection signal="gui_input" from="MainWindow/Overlay/Command/TextEdit" to="MainWindow/Overlay/Command/TextEdit" method="_on_TextEdit_gui_input"]

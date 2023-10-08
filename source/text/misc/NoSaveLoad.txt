@@ -1,0 +1,6 @@
+[center][color=#FFFF00]
+
+Save/Load disabled in Demo mode
+
+[/color][center]
+------------------------------------------------

@@ -1,0 +1,15 @@
+[gd_resource type="Shader" format=3 uid="uid://cpufdiocgwhyy"]
+
+[resource]
+code = "shader_type canvas_item;
+uniform float desaturation_strength = 1;
+uniform float darkness : hint_range(0.0, 1.0) = 1;
+
+void fragment(){
+	vec4 orig_color = texture(TEXTURE, UV);
+	float grey = (orig_color.r + orig_color.g + orig_color.b) / 3.0;
+	vec4 grey_color = vec4(grey, grey, grey, 1.0);
+	COLOR = mix(grey_color, orig_color, desaturation_strength);
+	COLOR.rgb *= darkness;
+}
+"

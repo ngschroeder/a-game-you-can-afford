@@ -1,0 +1,227 @@
+[gd_scene load_steps=27 format=3 uid="uid://b60q1fua8bm6j"]
+
+[ext_resource type="Script" path="res://scripts/Credits.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bfxsu4i7m3csk" path="res://art/credits/city1-16.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bxjkea34te1lk" path="res://art/credits/city1-credit.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://xj0ny58lv4if" path="res://art/credits/city2-credit.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cki5kpe0xwyk1" path="res://art/credits/city2-16.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ebcnbv7bx0qy" path="res://art/credits/city3-16.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c5qlmc2p2vgo0" path="res://art/credits/city3-credit.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bhdjjvs8q2mdx" path="res://art/credits/city7-credit.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://b6qrv1eb4ejyf" path="res://art/credits/city8-credit.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cykby8fyvmwlf" path="res://art/credits/special-thanks-16.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://lira4tg5fj5j" path="res://art/credits/special-thanks-credit.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bb1vfge5mpanc" path="res://art/credits/city7-16.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cy8bejefj2txn" path="res://art/credits/special-thanks-credit-name-1.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://ccnqmmgoifi8r" path="res://art/credits/city8-16.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dtd8j3j177daq" path="res://art/credits/special-thanks-credit-name-2.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://csrhtlyms2jfs" path="res://art/credits/special-thanks-credit-name-3.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://2o1p1x8fwcuv" path="res://art/credits/city5-16.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dc4fhsd1pjxgn" path="res://art/credits/city6-16.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://c7ww5vmujt338" path="res://art/credits/city6-credit.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cj1htfiv7b6g3" path="res://art/credits/city4-16.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://oq6885v71f3i" path="res://art/credits/city4-credit.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://nam5dwcitg7q" path="res://art/credits/city5-credit.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://d3dojba7xtaxr" path="res://art/credits/special-thanks-credit-name-4.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://c86entslda8kr" path="res://art/credits/z-end.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://cprbrkf3vhgi4" path="res://art/credits/city0-16.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://ccnn8iik5ldg8" path="res://art/credits/city0-credit.png" id="26"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1")
+
+[node name="MainWindow" type="Node2D" parent="."]
+
+[node name="Backdrop" type="ColorRect" parent="MainWindow"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="0" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("25")
+
+[node name="Credit" type="TextureRect" parent="MainWindow/0"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 620.0
+offset_bottom = 356.0
+texture = ExtResource("26")
+
+[node name="1" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("2")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/1"]
+layout_mode = 0
+offset_left = 670.0
+offset_top = 21.0
+offset_right = 1258.0
+offset_bottom = 229.0
+texture = ExtResource("3")
+
+[node name="2" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("5")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/2"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 450.0
+offset_right = 1273.0
+offset_bottom = 582.0
+texture = ExtResource("4")
+
+[node name="3" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("6")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/3"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 510.0
+offset_right = 353.0
+offset_bottom = 630.0
+texture = ExtResource("7")
+
+[node name="4" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("20")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/4"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 110.0
+offset_right = 318.0
+offset_bottom = 221.0
+texture = ExtResource("21")
+
+[node name="5" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("17")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/5"]
+layout_mode = 0
+offset_left = 995.0
+offset_top = 100.0
+offset_right = 1277.0
+offset_bottom = 274.0
+texture = ExtResource("22")
+
+[node name="6" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("18")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/6"]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 50.0
+offset_right = 888.0
+offset_bottom = 176.0
+texture = ExtResource("19")
+
+[node name="7" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("12")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/7"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 400.0
+offset_bottom = 176.0
+texture = ExtResource("8")
+
+[node name="8" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("14")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/8"]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 441.0
+offset_right = 1278.0
+offset_bottom = 618.0
+texture = ExtResource("9")
+
+[node name="9" type="TextureRect" parent="MainWindow"]
+offset_top = 40.0
+offset_right = 1280.0
+offset_bottom = 680.0
+texture = ExtResource("10")
+stretch_mode = 6
+
+[node name="Credit" type="TextureRect" parent="MainWindow/9"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 10.0
+offset_right = 1243.0
+offset_bottom = 67.0
+texture = ExtResource("11")
+
+[node name="1" type="TextureRect" parent="MainWindow/9/Credit"]
+layout_mode = 0
+offset_top = 75.0
+offset_right = 339.0
+offset_bottom = 231.0
+texture = ExtResource("13")
+
+[node name="2" type="TextureRect" parent="MainWindow/9/Credit"]
+layout_mode = 0
+offset_top = 65.0
+offset_right = 342.0
+offset_bottom = 230.0
+texture = ExtResource("15")
+
+[node name="3" type="TextureRect" parent="MainWindow/9/Credit"]
+layout_mode = 0
+offset_left = -95.0
+offset_top = 65.0
+offset_right = 388.0
+offset_bottom = 182.0
+texture = ExtResource("16")
+
+[node name="TheEnd" type="TextureRect" parent="MainWindow"]
+offset_left = 325.0
+offset_top = 196.0
+offset_right = 955.0
+offset_bottom = 396.0
+texture = ExtResource("23")
+
+[node name="MainMenu" type="TextureRect" parent="MainWindow"]
+offset_left = 521.0
+offset_top = 630.0
+offset_right = 758.0
+offset_bottom = 676.0
+texture = ExtResource("24")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="gui_input" from="MainWindow/MainMenu" to="." method="_on_MainMenu_gui_input"]

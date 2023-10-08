@@ -1,0 +1,39 @@
+[color=lime][You:]
+Hi. What can I do for you?
+[/color]
+------------------------------------------------
+[center][color=#FFFF00]
+The man looks around, as if he's
+being folllowed. He's the textbook
+definition of shifty.
+[/color][/center]
+------------------------------------------------
+[color=#778899][Man:]
+Hey man. I got a computer.
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+*sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+*sniff* *sniff*
+[/color]
+------------------------------------------------
+[color=#778899][Man:]
+You wanna computer?
+[/color]
+------------------------------------------------
+Well, I was just thinking about how I want to
+get back into learning I.T. stuff. Maybe this is
+a sign?
+------------------------------------------------
+One thing's for sure though; whatever kind
+of "computer" this might actually be, it's
+definitely stolen.
+------------------------------------------------
+CHOICES
+Tell me more about this computer.
+Sorry, not interested.
+
+------------------------------------------------
